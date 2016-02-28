@@ -1,0 +1,303 @@
+﻿/* CSS Document */
+
+body {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #EFF7FF;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	color: #000000;
+}
+a:link {
+	color: #0055ff;
+	text-decoration: none;
+}
+a:visited {
+	color: #0055ff;
+	text-decoration: none;
+}
+a:hover {
+	color: #E7E7E7;
+	background: #66C6F6;
+}
+img{
+	vertical-align: middle;
+	border: 0px;
+	max-width:100%;
+	height:auto;
+}
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #E4E3E8
+}
+
+/****** Form Controls Styles ******/
+form {
+	display: inline;
+}
+input{ 
+	font-size: 12px;  
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	border: 1px solid #009CEC;
+	color: #555555;
+}
+textarea { 
+	font-size: 12px;  
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	border: 1px solid #009CEC;
+	color: #000000;
+}
+select { 
+	font-size: 12px;  
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	background-color: #FFFFFF;
+	color: #555555;
+}
+input.text {
+	padding: 1px;
+	border: 1px solid #009CEC;
+	background-color: #FFFFFF;
+	color: #555555;
+}
+input.button {
+	BORDER-RIGHT: #2C59AA 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #2C59AA 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+	BORDER-LEFT: #2C59AA 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #2C59AA 1px solid;
+}
+input.radio{
+	border: 0px solid #009CEC;
+	padding: 0px;
+}
+/****** Main Layout Styles ******/
+#wrapper {
+	width: 760px;
+	margin: 10px auto;
+}
+#header {
+	height: 82px;
+	background: url(../images/header-bg.png) 0 top;
+	background-position: 0px;
+	background-repeat: no-repeat;
+}
+
+#footer {
+	clear: both;
+	margin-top: 2px;
+	border: 1px solid #C7C7CB;
+	background: #FFFFFF;
+}
+#innerFooter {
+	padding: 10px;
+	color: #666666;
+	font-size: 10px;
+	text-align: center;
+}
+/****** Header Elements Styles ******/
+
+#logo {
+	width:100px;
+	height:80px;
+	background:url(../images/logo1.gif) no-repeat;
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+/* header title */
+
+#blog-header {
+	padding: 8px 0px;
+}
+.blog-desc {
+padding-top:6px;
+}
+h1 {
+	padding: 0px;
+	margin: 0px;
+	color: #0066ff;
+	font-size: 28px;
+	font-weight: bold;
+}
+h1 a:link,
+h1 a:visited {
+	color: #2e60aa;
+	text-decoration: none;
+}
+h1 a:hover {
+	color: #0066ff;
+	text-decoration: none;
+}
+
+/* nav menu */
+#menu {
+	float: right;
+	margin-top: -12px;
+	color: #666666;
+}
+#menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+#menu li{
+	display: inline;
+	list-style: none;
+	padding: 0px;
+	padding-right: 3px;
+	margin: 0px;
+}
+#menu a,#menu a:link,#menu a:hover,#menu a:active{
+	color: #000;
+	text-decoration: none;
+}
+/****** Content Layout ******/
+#mainWrapper {
+
+	border: 1px solid #66ACF3;
+	background: #FFFFFF;
+	padding: 12px;
+	color:#000000;
+	
+}
+
+/****** Search Panel ******/
+.search-field { width: 155px; }
+
+/****** Defaul Page Elements ******/
+.article-bottom {
+	padding: 5px; 
+}
+
+.textbox{
+	border: solid 1px #009CEC;
+	padding: 1px;
+	margin-bottom: 10px;
+	
+}
+.textbox-title{
+	word-break:break-all;
+	position: relative; /* IE Fix for background image */
+	padding: 4px;
+	font-size: 12px;
+	background-color: #0089EB;
+}
+.textbox-label{
+	font-size: 12px;
+	padding: 3px;
+	color:#FFFFFF;
+	text-align: right;
+}
+.textbox-fontsize{
+	padding: 5px;
+	text-align: right;
+}
+.textbox-content{
+width:700px;
+overflow:hidden;
+padding: 5px;
+}
+.textbox-content li{
+list-style:none;
+}
+.textbox-bottom {
+	font-size: 12px;
+	
+	padding: 5px;
+}
+.textbox-content-reply{
+text-align:left;
+border: dashed 1px #97d2df;
+background-color:#e8f5f8;
+margin-top:10px;
+width:85%;
+margin-left:100px;
+}
+.textbox-content-reply{
+color:#006633;
+}
+
+/*下面wasw100根据需要自己添加的*/
+.textbox-content-left{
+	width:100px;
+	float:left;
+	text-align: center;
+}
+.textbox-content-name{
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+		
+}
+.textbox-content-right{
+	line-height:18px;
+}
+.manage{
+	padding: 5px;	
+}
+#addMessage {
+
+	border: 1px solid #C7C7CB;
+	background: #FFFFFF;
+	padding: 12px;
+	margin: 0px;
+	
+}
+.pages{
+	color:#000000;
+	text-align: center;
+	margin:0px;	
+}
+
+/*** 添加留言模块 ***/
+.add{
+	background-color:#EFF7FF;;
+	width:500px;
+	border: solid 1px #009CEC;
+	padding: 5px;
+	margin: 10px auto;
+	color:#000000;
+	
+}
+.add-title{
+	font-weight:bold;	
+	font-size: 13px;
+}
+.add-content{
+	padding: 10px;	
+}
+.add-bottom{
+	text-align: left;
+	padding-left: 50px;
+	margin-bottom: 0px;	
+}
+.mess-content{
+	font-size: 12px;
+	width: 325px;
+	height: 80px;
+	border: 1px solid #009CEC;
+}
+/**** reply ****/
+.reply-display{
+	display: block;
+	text-align: left;
+	padding-left: 100px;
+}
+.textbox-title-left{
+	width:150px;
+	float:left;
+	font-size: 12px;
+	padding: 3px;
+	color:#FFFFFF;
+	text-align: left;
+}

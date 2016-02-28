@@ -1,0 +1,86 @@
+﻿
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>欢迎</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <style type="text/css">
+<!--
+.STYLE1 {font-size: 36px}
+.STYLE2 {font-family: Arial, Helvetica, sans-serif}
+-->
+    </style>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<p><span class="comments">Henry   David   Thoreau/<span class="STYLE2">享利.大卫.梭罗</span></span><span class="comments STYLE2"></span></p>
+				<p><br />
+			  However   mean   your   life   is,   meet   it   and   live   it;   do   not   shun   it   and   call   it   hard   names.   It   is   not   so   bad   as   you   are.   It   looks   poorest   when   you   are   richest.   The   faultfinder   will   find   faults   in   paradise.   Love   your   life,   poor   as   it   is.   You   may   perhaps   have   some   pleasant,   thrilling,   glorious   hours,   even   in   a   poorhouse.<span class="comments"></span></p>
+				<p><span class="comments">Love   Your   Life</span><br />
+			    </p>
+		  </div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						I have lived for 
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						stay hungry,stay foolish.<br/>
+						<div class="signature">come on ! xiaopan</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright"><a href='index.jsp' class="STYLE1">ENTER</a></div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(1991, 12, 9);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
